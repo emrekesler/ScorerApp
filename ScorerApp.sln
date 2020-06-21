@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{8DB003EC-727F-416D-9441-716DB4CBB168}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScorerApp.Entity", "ScorerApp.Entity\ScorerApp.Entity.csproj", "{CEE4F55D-0794-48FB-951D-AC3933A68C0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScorerApp.BLL", "ScorerApp.BLL\ScorerApp.BLL.csproj", "{9615E04E-D3E6-4308-87A9-B90EF35276FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScorerApp.DAL", "ScorerApp.DAL\ScorerApp.DAL.csproj", "{A1ED2664-3B0F-4781-9C0E-3F6A498030D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScorerApp.DTO", "ScorerApp.DTO\ScorerApp.DTO.csproj", "{16439062-A79B-44FA-86EC-B986FBD90561}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScorerApp.API", "ScorerApp.API\ScorerApp.API.csproj", "{0131915F-4FF1-49D4-BF5E-CF12846C62E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScorerApp.FootballDataProvider", "ScorerApp.FootballDataProvider\ScorerApp.FootballDataProvider.csproj", "{5CE4284F-873B-47F8-9292-C27A846A7AEE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8DB003EC-727F-416D-9441-716DB4CBB168}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DB003EC-727F-416D-9441-716DB4CBB168}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DB003EC-727F-416D-9441-716DB4CBB168}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DB003EC-727F-416D-9441-716DB4CBB168}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEE4F55D-0794-48FB-951D-AC3933A68C0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEE4F55D-0794-48FB-951D-AC3933A68C0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEE4F55D-0794-48FB-951D-AC3933A68C0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEE4F55D-0794-48FB-951D-AC3933A68C0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9615E04E-D3E6-4308-87A9-B90EF35276FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9615E04E-D3E6-4308-87A9-B90EF35276FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9615E04E-D3E6-4308-87A9-B90EF35276FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9615E04E-D3E6-4308-87A9-B90EF35276FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1ED2664-3B0F-4781-9C0E-3F6A498030D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1ED2664-3B0F-4781-9C0E-3F6A498030D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1ED2664-3B0F-4781-9C0E-3F6A498030D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1ED2664-3B0F-4781-9C0E-3F6A498030D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16439062-A79B-44FA-86EC-B986FBD90561}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16439062-A79B-44FA-86EC-B986FBD90561}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16439062-A79B-44FA-86EC-B986FBD90561}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16439062-A79B-44FA-86EC-B986FBD90561}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0131915F-4FF1-49D4-BF5E-CF12846C62E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0131915F-4FF1-49D4-BF5E-CF12846C62E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0131915F-4FF1-49D4-BF5E-CF12846C62E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0131915F-4FF1-49D4-BF5E-CF12846C62E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CE4284F-873B-47F8-9292-C27A846A7AEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CE4284F-873B-47F8-9292-C27A846A7AEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CE4284F-873B-47F8-9292-C27A846A7AEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CE4284F-873B-47F8-9292-C27A846A7AEE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D2D62EF5-503C-449C-9518-06C57D0F0FA2}
+	EndGlobalSection
+EndGlobal
