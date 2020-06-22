@@ -4,7 +4,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System;
 
-
 namespace ScorerApp.BLL.Services
 {
     public class ServiceBase<T> where T : BaseEntity

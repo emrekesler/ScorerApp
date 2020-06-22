@@ -105,7 +105,6 @@ namespace ScorerApp.BLL.Services
                     return new Response<MatchDto>(_mapper.Map<MatchDto>(match), true);
                 else
                     return new Response<MatchDto>(isSuccess: true);
-
             }
             catch (Exception ex)
             {

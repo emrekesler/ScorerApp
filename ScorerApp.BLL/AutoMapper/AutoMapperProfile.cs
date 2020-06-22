@@ -4,7 +4,6 @@ using ScorerApp.DTO.Match;
 using ScorerApp.DTO.Team;
 using ScorerApp.Entity.Entities;
 
-
 namespace ScorerApp.BLL.AutoMapper
 {
     public class AutoMapperProfile : Profile
