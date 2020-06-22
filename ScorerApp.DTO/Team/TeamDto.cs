@@ -3,6 +3,5 @@
     public class TeamDto : BaseDto
     {
         public string Name { get; set; }
-
     }
 }

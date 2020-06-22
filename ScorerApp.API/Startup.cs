@@ -46,14 +46,10 @@ namespace ScorerApp.API
             //In Memory Database Kullanýlacaksa Aþaðýdaki Kodun Açýlmasý Yeterli.
             services.AddDbContext<ScorerAppDbContext>(db => db.UseInMemoryDatabase("ScorerApp"));
 
-
-
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Scorer API", Version = "v1" });
             });
-
-
 
             MapperConfiguration config = new MapperConfiguration(
                 cfg => cfg.AddProfile<AutoMapperProfile>()
@@ -72,8 +68,8 @@ namespace ScorerApp.API
                 app.UseDeveloperExceptionPage();
             }
 
-
             app.UseSwagger();
+
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");

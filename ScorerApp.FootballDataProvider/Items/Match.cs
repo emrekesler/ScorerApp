@@ -13,5 +13,4 @@ namespace ScorerApp.FootballDataProvider.Items
         public string Status { get; set; }
         public string Score { get; set; }
     }
-
 }

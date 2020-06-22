@@ -12,8 +12,8 @@ namespace ScorerApp.BLL.Services
     {
         public TeamService(DbContext dbContext, ILogger<ServiceBase<Team>> logger, IMapper mapper) : base(dbContext, logger, mapper)
         {
-
         }
+
         public Team Add(string name)
         {
             try
@@ -62,6 +62,5 @@ namespace ScorerApp.BLL.Services
                 return 0;
             }
         }
-
-    }
+    }   
 }

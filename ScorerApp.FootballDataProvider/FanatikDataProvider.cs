@@ -28,7 +28,6 @@ namespace ScorerApp.FootballDataProvider
 
                     HtmlNodeCollection matches = item.SelectNodes("div[2]/div/div");
 
-
                     foreach (var match in matches)
                     {
                         if (match.Id.Contains("match"))
@@ -41,7 +40,6 @@ namespace ScorerApp.FootballDataProvider
                                 AwayTeamName = match.SelectSingleNode($"div/div[3]/a[2]/span").InnerText,
                                 Status = match.SelectSingleNode($"div/div[2]/a/span[1]").InnerText,
                                 Score = match.SelectSingleNode($"div/div[2]/a/span[2]").InnerText
-
                             };
 
                             matchList.Add(mm);
@@ -53,7 +51,7 @@ namespace ScorerApp.FootballDataProvider
                     return new List<Match>();
                 }
             }
-
+            
             return matchList;
         }
     }

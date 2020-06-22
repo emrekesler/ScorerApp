@@ -32,9 +32,13 @@ namespace ScorerApp.BLL.Services
                 Match match = _dbSet.Include(m => m.HomeTeam).Include(m => m.AwayTeam).Include(m => m.League).SingleOrDefault(m => m.DataProviderMatchId == Id);
 
                 if (match != null)
+                {
                     return new Response<MatchDto>(_mapper.Map<MatchDto>(match), true);
+                }
                 else
+                {
                     return new Response<MatchDto>(isSuccess: true);
+                }
             }
             catch (Exception ex)
             {
@@ -50,14 +54,11 @@ namespace ScorerApp.BLL.Services
                 List<Match> matches = GetMatches(date);
 
                 if (!matches.Any())
-                {
                     GenerateDailyMatches(date);
-                }
 
                 matches = GetMatches(date);
 
                 return new Response<List<MatchDto>>(_mapper.Map<List<MatchDto>>(matches), true);
-
             }
             catch (Exception ex)
             {
@@ -68,9 +69,9 @@ namespace ScorerApp.BLL.Services
 
         private void GenerateDailyMatches(DateTime date)
         {
-            var dpMatches = _footballDataProvider.GetMatches(date.Date);
+            List<FootballDataProvider.Items.Match> dpMatches = _footballDataProvider.GetMatches(date.Date);
 
-            foreach (var item in dpMatches)
+            foreach (FootballDataProvider.Items.Match item in dpMatches)
             {
                 Match match = new Match
                 {
@@ -101,14 +102,10 @@ namespace ScorerApp.BLL.Services
                 Match match = _dbSet.Where(match => match.DataProviderMatchId == Id && match.StartDate == date.Date).Include(m => m.HomeTeam).Include(m => m.AwayTeam).Include(m => m.League).SingleOrDefault();
 
                 if (match != null)
-                {
                     return new Response<MatchDto>(_mapper.Map<MatchDto>(match), true);
-                }
                 else
-                {
                     return new Response<MatchDto>(isSuccess: true);
 
-                }
             }
             catch (Exception ex)
             {

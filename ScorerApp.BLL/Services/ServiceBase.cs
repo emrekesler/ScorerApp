@@ -38,8 +38,6 @@ namespace ScorerApp.BLL.Services
         public void Log(Exception ex)
         {
             _logger.LogError(ex, "{@Exception}", ex);
-
         }
-
     }
 }

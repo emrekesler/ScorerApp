@@ -1,5 +1,4 @@
-﻿
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using ScorerApp.Entity.Entities;
 
 namespace ScorerApp.DAL.Context
@@ -8,8 +7,8 @@ namespace ScorerApp.DAL.Context
     {
         public ScorerAppDbContext(DbContextOptions<ScorerAppDbContext> options) : base(options)
         {
-
         }
+
         public virtual DbSet<League> Leagues { get; set; }
         public virtual DbSet<Match> Matches { get; set; }
         public virtual DbSet<Team> Teams { get; set; }
@@ -25,7 +24,6 @@ namespace ScorerApp.DAL.Context
               .HasOne(c => c.AwayTeam)
               .WithMany()
               .OnDelete(DeleteBehavior.NoAction);
-
         }
     }
 }
