@@ -6,13 +6,10 @@ stages {
 
 stage('Build') {
      steps {
+
+     echo "dotnet build --configuration Release"
+
             bat (/dotnet build --configuration Release/)
       }
    }
-stage('Pack') {
-     steps {
-           bat (/dotnet pack --no-build --output nupkgs/)
-      }
-   }
-
 }
