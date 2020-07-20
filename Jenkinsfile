@@ -1,8 +1,9 @@
 pipeline {
 
-     echo "dotnet build --configuration Release"
 
-
+agent any
+environment {
+}
 stages {
 
 stage('Build') {
@@ -13,5 +14,4 @@ stage('Build') {
             bat (/dotnet build --configuration Release/)
       }
    }
-}
-}
+}}
