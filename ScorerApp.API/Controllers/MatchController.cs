@@ -42,5 +42,10 @@ namespace ScorerApp.API.Controllers
         {
             return Ok();
         }
+        [HttpGet, Route("Test3")]
+        public IActionResult Test3()
+        {
+            return Ok();
+        }
     }
 }
