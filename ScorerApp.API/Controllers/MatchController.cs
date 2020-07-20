@@ -35,7 +35,7 @@ namespace ScorerApp.API.Controllers
         [HttpGet, Route("Test")]
         public IActionResult Test()
         {
-            return Ok();
+            return Ok(Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT"));
         }
         [HttpGet, Route("Test2")]
         public IActionResult Test2()
