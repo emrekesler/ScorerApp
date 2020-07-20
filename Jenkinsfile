@@ -11,9 +11,13 @@ stages {
 stage('Build') {
      steps {
 
-     echo "dotnet build --configuration Release"
-
-            bat (/dotnet build --configuration Release/)
+            bat (/dotnet restore ScorerApp.sln/)
+            echo "Restore OK"
+            bat (/dotnet build ScorerApp.sln -c Release/)
+            echo "Build OK"
+            bat (/dotnet publish ScorerApp.API\ScorerApp.API.csproj -c Release --output APIPublish/)
+            echo "Publish OK"
+            
       }
    }
 }}
