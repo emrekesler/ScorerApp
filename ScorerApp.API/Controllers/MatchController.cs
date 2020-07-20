@@ -31,5 +31,11 @@ namespace ScorerApp.API.Controllers
         {
             return Json(_matchService.Get(Id, date));
         }
+
+        [HttpGet, Route("Test")]
+        public IActionResult Test()
+        {
+            return Ok();
+        }
     }
 }
