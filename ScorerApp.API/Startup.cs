@@ -38,6 +38,7 @@ namespace ScorerApp.API
             services.AddTransient<IMatchService, MatchService>();
             services.AddTransient<ITeamService, TeamService>();
             services.AddTransient<ILeagueService, LeagueService>();
+
             services.AddTransient<IFootballDataProvider, FanatikDataProvider>();
 
             //Sql Sunucusu Kullanalýcaksa appsettings.json dosyasýnda düzenleme yapýlmasý ve Update-Database metodu çalýþtýrýlmasý yeterli olacaktýr.
