@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using ScorerApp.BLL.Services.Interfaces;
 
 namespace ScorerApp.API.Controllers
@@ -9,9 +10,11 @@ namespace ScorerApp.API.Controllers
     public class MatchController : Controller
     {
         private readonly IMatchService _matchService;
-        public MatchController(IMatchService matchService)
+        IConfiguration _configuration;
+        public MatchController(IMatchService matchService, IConfiguration configuration)
         {
             _matchService = matchService;
+            _configuration = configuration;
         }
 
         [HttpGet, Route("Get/{Id:int}")]
@@ -40,7 +43,7 @@ namespace ScorerApp.API.Controllers
         [HttpGet, Route("Test2")]
         public IActionResult Test2()
         {
-            return Ok();
+            return Ok(_configuration["Env"]);
         }
         [HttpGet, Route("Test3")]
         public IActionResult Test3()
